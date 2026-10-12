@@ -34,6 +34,12 @@ HDD는 "Hard Disk Drive"의 약자로, 자성 물질로 코팅된 원판인 플�
 데이터를 읽으려면 헤드가 해당 위치로 이동하고 원하는 부분이 회전해 올 때까지 기다려야 한다. 이러한 과정은 데이터 접근 시간에 영향을 준다. HDD는 대용량 파일 보관에 활용되며, 이후 비교에서는 용량뿐 아니라 가격, 소음, 충격에 대한 특성도 살펴볼 예정이다.
 
 
+### 자성 원판에 정보를 기록하는 원리
+
+HDD는 플래터 표면의 작은 영역을 자화시켜 정보를 기록한다. 쓰기 헤드가 자기장을 만들어 기록 영역의 자화 상태를 바꾸고, 읽기 헤드는 기록된 자화에 따른 자기장 변화를 감지한다. 이렇게 얻은 신호를 처리해 데이터를 읽는다. 원판이 돌아가는 것 자체가 정보를 저장하는 것은 아니며, 정보는 원판 표면의 자화 상태에 남는다.
+
+전원을 끄면 모터와 헤드의 동작은 멈추지만 기록된 자화는 유지된다. 따라서 다시 전원을 켰을 때 저장한 파일을 읽을 수 있다. SSD가 셀의 전하 상태를 이용한다면, HDD는 기록 매체의 자화 상태를 이용한다는 차이가 있다.
+
 ## 4. 데이터 저장 방식 비교
 
 | 비교 항목 | SSD | HDD |
@@ -60,3 +66,5 @@ HDD 안에는 데이터를 기록하는 둥근 원판과, 원판 위를 움직�
 
 - [KIOXIA: NAND 플래시 메모리 원리](https://www.kioxia.com/en-jp/rd/technology/nand-flash.html)
 - [KIOXIA: 셀당 저장 비트와 다중 상태](https://www.kioxia.com/en-jp/rd/technology/multi-level-cell.html)
+
+- [Seagate: 자기 기록과 읽기 헤드 원리](https://www.seagate.com/content/dam/seagate/assets/resources/enterprise/white-paper/mozaic-long-form-pdf-whitepaper-en-gb.pdf)
