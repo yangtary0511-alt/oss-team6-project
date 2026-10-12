@@ -11,7 +11,7 @@
 
 ## 1. GPU란 무엇인가?
 
-**GPU(Graphics Processing Unit)**는 컴퓨터에서 이미지, 영상을 표현하는 데 필요한 연산을 수행하는 그래픽 처리 장치이다.
+**GPU(Graphics Processing Unit)** 는 컴퓨터에서 이미지, 영상을 표현하는 데 필요한 연산을 수행하는 그래픽 처리 장치이다.
 
 ## 2. GPU VS CPU
 
