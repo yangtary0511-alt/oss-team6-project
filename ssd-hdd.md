@@ -26,18 +26,28 @@ SSD는 "Solid State Drive"의 약자로, 일반적으로 NAND 플래시 메모�
 HDD는 "Hard Disk Drive"의 약자로, 자성 물질로 코팅된 원판인 플래터에 데이터를 기록한다. 모터가 플래터를 회전시키고 읽기·쓰기 헤드가 필요한 위치로 이동하여 데이터를 처리한다. SSD와 달리 기계적으로 움직이는 부품을 사용한다.
 
 데이터를 읽으려면 헤드가 해당 위치로 이동하고 원하는 부분이 회전해 올 때까지 기다려야 한다. 이러한 과정은 데이터 접근 시간에 영향을 준다. HDD는 대용량 파일 보관에 활용되며, 이후 비교에서는 용량뿐 아니라 가격, 소음, 충격에 대한 특성도 살펴볼 예정이다.
+
+
 ## 4. 데이터 저장 방식 비교
+
 | 비교 항목 | SSD | HDD |
 | --- | --- | --- |
 | 데이터를 저장하는 곳 | 반도체 메모리 | 자성 원판 |
 | 움직이는 부품 | 없음 | 회전하는 원판과 움직이는 헤드 |
 | 전원을 끄면 | 데이터 유지 | 데이터 유지 |
 | 데이터를 찾는 방식 | 메모리에 전자적으로 접근 | 헤드 이동과 원판 회전 |
+
 둘 다 전원을 꺼도 파일을 보관할 수 있지만, 데이터를 찾는 방식은 다르다. SSD는 기계적인 움직임을 기다리지 않아도 돼서 일반적으로 데이터 접근이 빠르고 기계적 소음도 없다. HDD는 원판과 헤드가 움직이기 때문에 대기 시간과 소음이 생긴다. 실제 속도는 제품 사양과 작업에 따라서도 달라진다.
+
 ## 7. 그림과 참고 자료
+
 ![HDD와 SSD의 내부 구조 비교](https://upload.wikimedia.org/wikipedia/commons/3/39/Disassembled_HDD_and_SSD.JPG)
+
 **왼쪽: HDD / 오른쪽: SSD**
+
 HDD 안에는 데이터를 기록하는 둥근 원판과, 원판 위를 움직이며 데이터를 읽고 쓰는 헤드가 보인다. SSD는 원판 대신 기판 위의 메모리 칩에 데이터를 저장한다.
+
 사진: Rochellesinger · [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Disassembled_HDD_and_SSD.JPG) · [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/)
+
 - [Intel: HDD vs SSD](https://www.intel.com/content/www/us/en/gaming/resources/ssd-v-hdd.html)
 - [Crucial: SSD vs HDD](https://stage.crucial.com/articles/about-ssd/ssd-vs-hdd)
