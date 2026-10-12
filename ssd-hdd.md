@@ -21,6 +21,12 @@ SSD는 "Solid State Drive"의 약자로, 일반적으로 NAND 플래시 메모�
 
 회전하는 부품이 없으므로 기계적 회전 소음이 없고, 일반적으로 HDD보다 데이터 접근 시간이 짧다. 이러한 특성은 운영체제를 부팅하거나 여러 작은 파일을 읽는 작업에서 유리하다. 다만 모든 SSD의 성능이 같은 것은 아니며, 연결 방식과 제품 구성, 작업 조건에 따라 달라진다.
 
+### NAND 메모리에 정보를 저장하는 원리
+
+NAND 메모리는 작은 저장 단위인 셀에 전하를 가두어 정보를 저장한다. 셀에 저장된 전하량에 따라 전류가 흐르기 시작하는 기준 전압인 문턱전압이 달라진다. 읽을 때는 이 차이를 구분해 저장된 값을 알아낸다. 전하를 저장하는 층이 절연되어 있어 전원을 꺼도 정보가 유지된다.
+
+셀 하나에 저장하는 정보량에 따라 SLC는 1비트, MLC는 2비트, TLC는 3비트, QLC는 4비트를 저장한다. 여러 비트를 저장하려면 전하량에 따른 상태를 더 세밀하게 구분해야 한다. NAND라는 이름에 논리 게이트 이름이 들어가지만, 데이터가 유지되는 원리는 전하 저장과 문턱전압 변화이다.
+
 ## 3. HDD의 기본 개념
 
 HDD는 "Hard Disk Drive"의 약자로, 자성 물질로 코팅된 원판인 플래터에 데이터를 기록한다. 모터가 플래터를 회전시키고 읽기·쓰기 헤드가 필요한 위치로 이동하여 데이터를 처리한다. SSD와 달리 기계적으로 움직이는 부품을 사용한다.
@@ -51,3 +57,6 @@ HDD 안에는 데이터를 기록하는 둥근 원판과, 원판 위를 움직�
 
 - [Intel: HDD vs SSD](https://www.intel.com/content/www/us/en/gaming/resources/ssd-v-hdd.html)
 - [Crucial: SSD vs HDD](https://stage.crucial.com/articles/about-ssd/ssd-vs-hdd)
+
+- [KIOXIA: NAND 플래시 메모리 원리](https://www.kioxia.com/en-jp/rd/technology/nand-flash.html)
+- [KIOXIA: 셀당 저장 비트와 다중 상태](https://www.kioxia.com/en-jp/rd/technology/multi-level-cell.html)
