@@ -18,6 +18,17 @@
 - **GPU:** 연산을 수행하는 반도체 칩
 - **그래픽카드:** GPU에 그래픽 메모리, 전원 공급 회로, 냉각장치 등을 결합한 하드웨어 장치
 
+
+![NVIDIA AD102 GPU](https://github.com/user-attachments/assets/7c68ab99-284c-4186-85dc-2f0c2e4ecde1)
+
+*그림 1. NVIDIA GeForce RTX 4090에 사용되는 AD102 GPU chip*
+
+---
+
+![ASUS ROG Strix GeForce RTX 4090 그래픽카드](https://upload.wikimedia.org/wikipedia/commons/7/76/Asus_Strix_RTX_4090.jpg)
+
+*그림 2. ASUS ROG Strix GeForce RTX 4090 그래픽카드*
+
 ## 2. GPU VS CPU
 
 ## 3. GPU가 화면을 만드는 과정
@@ -25,3 +36,8 @@
 ## 4. VRAM의 역할
 
 ## 5. 정리
+
+
+**이미지 출처**
+- 그림 1: Fritzchens Fritz, Wikimedia Commons (CC0 1.0)
+- 그림 2: Benlisquare, Wikimedia Commons (CC BY-SA 4.0)
