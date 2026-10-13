@@ -8,7 +8,7 @@ RAM(Random Access Memory)은 컴퓨터가 동작하는 동안 프로그램 코�
 
 RAM은 전원이 꺼지면 내용이 모두 사라지는 휘발성(volatile) 메모리입니다. 전원이 꺼져도 데이터가 유지되는 SSD/HDD 같은 보조기억장치와는 역할이 다르며, "지금 실행 중인 작업을 빠르게 처리하기 위한 임시 작업 공간"이라고 이해하면 됩니다.
 
-![RAM 스틱](https://raw.githubusercontent.com/yangtary0511-alt/oss-team9-project/2022113377%ED%95%98%EC%98%81%EB%AA%A8/images/ram.jpg)
+![RAM 스틱](https://raw.githubusercontent.com/yangtary0511-alt/oss-team9-project/2022113377-%ED%95%98%EC%98%81%EB%AA%A8/images/ram.jpg)
 
 ## 메모리 계층 구조
 
