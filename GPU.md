@@ -35,6 +35,12 @@ CPU는 컴퓨터의 전반적인 동작을 제어하고 명령어를 처리하�
 
 반면 GPU는 수천 개의 Core(연산 장치)를 활용해 대규모 데이터에 동일한 연산을 동시에 적용하는 Parallel Processing에 특화되어 있다. 단, 전체 Throughput(처리량)이 높다고 해서 모든 작업에서 CPU보다 빠른 것은 아니다. Sequential Processing(순차 작업)이나 복잡한 Branching(조건 분기)이 많은 작업에서는 GPU의 효율이 떨어진다.
 
+![CPU vs GPU Architecture](https://upload.wikimedia.org/wikipedia/commons/c/c6/Cpu-gpu.svg)
+
+*그림 3. CPU와 GPU의 내부 구조 비교 (초록색 ALU가 연산 장치)*
+
+---
+
 | 구분 | CPU | GPU |
 |---|---|---|
 | 설계의 중점 | 명령어 처리 및 제어 | 많은 연산을 병렬로 처리 |
@@ -75,3 +81,4 @@ GPU가 연산을 하기 위해서는 피연산자 즉, 데이터를 저장할 �
 **이미지 출처**
 - 그림 1: Fritzchens Fritz, Wikimedia Commons (CC0 1.0)
 - 그림 2: Benlisquare, Wikimedia Commons (CC BY-SA 4.0)
+- 그림 3: Offnfopt, Wikimedia Commons (CC BY-SA 4.0)
