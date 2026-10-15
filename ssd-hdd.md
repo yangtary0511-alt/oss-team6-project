@@ -97,6 +97,12 @@ PCIe·NVMe SSD는 SATA SSD보다 높은 전송 속도를 제공할 수 있지만
 
 제품 사양을 비교할 때는 순차 읽기와 임의 읽기 수치를 구분해야 한다. 같은 항목이라도 데이터 크기와 동시 요청 수 등 측정 조건이 같아야 비교하기 쉽다.
 
+### 용량을 나타내는 단위
+
+저장장치의 용량은 보관할 수 있는 데이터의 양이며, 주로 GB나 TB로 표시한다. 제품에 표시된 용량 기준으로 1GB는 10억 바이트, 1TB는 1조 바이트이므로 1TB는 1,000GB다.
+
+GiB와 TiB는 1,024를 기준으로 계산하는 단위다. 1GiB는 1,073,741,824바이트로, 같은 바이트 수라도 GB와 GiB 중 어느 단위를 쓰느냐에 따라 표시되는 숫자가 달라진다.
+
 ## 7. 그림과 참고 자료
 
 ![HDD와 SSD의 내부 구조 비교](https://upload.wikimedia.org/wikipedia/commons/3/39/Disassembled_HDD_and_SSD.JPG)
@@ -114,3 +120,5 @@ HDD 안에는 데이터를 기록하는 둥근 원판과, 원판 위를 움직�
 - [KIOXIA: 셀당 저장 비트와 다중 상태](https://www.kioxia.com/en-jp/rd/technology/multi-level-cell.html)
 
 - [Seagate: 자기 기록과 읽기 헤드 원리](https://www.seagate.com/content/dam/seagate/assets/resources/enterprise/white-paper/mozaic-long-form-pdf-whitepaper-en-gb.pdf)
+
+- [Seagate: 저장 용량 표시 기준](https://www.seagate.com/au/en/support/kb/storage-capacity-measurement-standards-194563en/)
