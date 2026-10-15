@@ -1,13 +1,13 @@
 # SSD·HDD: 데이터 저장 방식, 속도·용량·특징 비교
 
 ## 목차
-1. 저장장치의 역할
-2. SSD의 기본 개념
-3. HDD의 기본 개념
-4. 데이터 저장 방식 비교
-5. 속도·용량·특징 비교
-6. 용도별 선택과 정리
-7. 그림과 참고 자료
+1. [저장장치의 역할](#1-저장장치의-역할)
+2. [SSD의 기본 개념](#2-ssd의-기본-개념)
+3. [HDD의 기본 개념](#3-hdd의-기본-개념)
+4. [데이터 저장 방식 비교](#4-데이터-저장-방식-비교)
+5. [속도·용량·특징 비교](#5-속도용량특징-비교)
+6. [용도별 선택과 정리](#6-용도별-선택과-정리)
+7. [그림과 참고 자료](#7-그림과-참고-자료)
 
 ## 1. 저장장치의 역할
 
@@ -116,10 +116,10 @@ PCIe 세대와 레인 수, 제품 사양에 따라 속도가 달라지며 연결
 | 사용 목적 | 선택 예시 | 이유 |
 | --- | --- | --- |
 | 운영체제, 자주 쓰는 프로그램과 게임 | SSD | 파일 접근이 빨라 부팅과 로딩 시간을 줄이는 데 유리하다. |
-| 사진, 영상 등 대용량 파일 보관 | HDD 또는 대용량 SSD | 필요한 용량과 예산을 비교하고, 자주 편집하는 파일은 접근 속도도 고려한다. |
-| 속도와 저장 공간을 함께 확보 | SSD와 HDD 병행 | 자주 실행하는 프로그램은 SSD에, 보관용 파일은 HDD에 나눠 저장한다. |
+| 사진, 영상 등 대용량 파일 보관 | HDD 또는 대용량 SSD | 용량당 가격을 비교하고, 자주 편집한다면 속도도 고려한다. |
+| 속도와 저장 공간을 함께 확보 | SSD와 HDD 병행 | 프로그램은 SSD에, 보관용 파일은 HDD에 나눠 저장한다. |
 
-SSD는 빠른 접근에, HDD는 대용량을 확보하는 용도에 강점이 있다. 필요한 용량과 예산, 연결 규격을 함께 보고 선택하면 된다. 어느 쪽이든 고장으로 파일을 잃을 수 있으므로 중요한 자료는 별도 장치나 클라우드에 백업한다.
+빠른 실행이 중요하면 SSD를, 보관 용량이 중요하면 용량당 가격을 중심으로 비교한다. 어느 쪽이든 고장에 대비해 중요한 자료는 별도 장치나 클라우드에 백업한다.
 
 ## 7. 그림과 참고 자료
 
@@ -133,10 +133,7 @@ HDD 안에는 데이터를 기록하는 둥근 원판과, 원판 위를 움직�
 
 - [Intel: HDD vs SSD](https://www.intel.com/content/www/us/en/gaming/resources/ssd-v-hdd.html)
 - [Crucial: SSD vs HDD](https://stage.crucial.com/articles/about-ssd/ssd-vs-hdd)
-
 - [KIOXIA: NAND 플래시 메모리 원리](https://www.kioxia.com/en-jp/rd/technology/nand-flash.html)
 - [KIOXIA: 셀당 저장 비트와 다중 상태](https://www.kioxia.com/en-jp/rd/technology/multi-level-cell.html)
-
 - [Seagate: 자기 기록과 읽기 헤드 원리](https://www.seagate.com/content/dam/seagate/assets/resources/enterprise/white-paper/mozaic-long-form-pdf-whitepaper-en-gb.pdf)
-
 - [Seagate: 저장 용량 표시 기준](https://www.seagate.com/au/en/support/kb/storage-capacity-measurement-standards-194563en/)
