@@ -5,4 +5,4 @@
 - [CPU](CPU.md)
 - [GPU](GPU.md)
 - [RAM](ram.md)
-- [메인보드](motherboard/01_overview.md)
+- [메인보드](메인보드.md)
