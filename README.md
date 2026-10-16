@@ -57,7 +57,6 @@ CPU의 성능은 클럭 속도뿐 아니라 코어와 스레드 수, 아키텍�
 
 <img width="1024" height="572" alt="1232" src="https://github.com/user-attachments/assets/c1ab2254-dfdd-4951-bc1d-526be419001d" />
 
-
 👉 [CPU 자세히 알아보기](CPU.md)
 
 ---
@@ -77,7 +76,6 @@ RAM은 전원이 꺼지면 저장된 데이터가 사라지는 휘발성 메모�
 
 <img width="1024" height="559" alt="1234" src="https://github.com/user-attachments/assets/883b0a47-a785-4fb7-8985-83f5cc9c710b" />
 
-
 👉 [RAM 자세히 알아보기](ram.md)
 
 ---
@@ -95,10 +93,9 @@ SSD는 NAND 플래시 메모리에 데이터를 저장합니다. 움직이는 �
 
 **핵심 키워드:** 영구 저장 · NAND 플래시 · 자기 디스크 · 속도 · 용량
 
-👉 [SSD · HDD 자세히 알아보기](ssd-hdd.md)
-
 <img width="1024" height="575" alt="1235" src="https://github.com/user-attachments/assets/b08fd215-40cd-4e53-801c-43aaadabf594" />
 
+👉 [SSD · HDD 자세히 알아보기](ssd-hdd.md)
 
 ---
 
@@ -115,10 +112,9 @@ GPU가 처리하는 그래픽 데이터와 연산 중간 결과를 저장하는 
 
 **핵심 키워드:** 병렬 처리 · 그래픽 렌더링 · VRAM · 3D · 영상 처리
 
-👉 [GPU 자세히 알아보기](GPU.md)
-
 <img width="1024" height="559" alt="1233" src="https://github.com/user-attachments/assets/e5a96aa6-a6cb-4b4c-8e78-cc5e3065b15c" />
 
+👉 [GPU 자세히 알아보기](GPU.md)
 
 ---
 
@@ -139,7 +135,6 @@ USB 및 네트워크 연결부 등이 주요 구성 요소입니다. 칩셋은 C
 **핵심 키워드:** 부품 연결 · CPU 소켓 · PCIe · M.2 · SATA · 호환성
 
 <img width="1024" height="559" alt="1231" src="https://github.com/user-attachments/assets/9748067c-bdb4-4d84-9d59-4ca753d91ab1" />
-
 
 👉 [메인보드 자세히 알아보기](메인보드.md)
 
