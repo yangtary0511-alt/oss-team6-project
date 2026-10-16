@@ -2,6 +2,17 @@
 
 작성자: 2022113377 하영모
 
+## 목차
+
+- [개요](#개요)
+- [메모리 계층 구조](#메모리-계층-구조)
+- [RAM의 종류](#ram의-종류)
+  - [SRAM (Static RAM)](#sram-static-ram)
+  - [DRAM (Dynamic RAM)](#dram-dynamic-ram)
+- [DDR SDRAM의 세대](#ddr-sdram의-세대)
+- [RAM 타이밍 — CAS Latency(CL)](#ram-타이밍--cas-latencycl)
+- [선택 가이드](#선택-가이드)
+
 ## 개요
 
 RAM(Random Access Memory)은 컴퓨터가 동작하는 동안 프로그램 코드와 데이터를 저장하는 주기억장치입니다. CPU는 레지스터와 캐시에 없는 데이터가 필요할 때 RAM에서 가져오며, 저장된 위치와 상관없이 일정한 시간 안에 어느 주소든 바로 접근할 수 있다는 점이 이름("Random Access")의 유래입니다.
