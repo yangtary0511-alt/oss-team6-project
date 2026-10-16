@@ -307,6 +307,9 @@ M6는 Mac mini에 탑재된 데스크톱용 사례이고 388H는 모바일 제�
 | 메모리 관련 공개 사양 | 통합 메모리 최대 32GB, 대역폭 최대 170GB/s | 최대 96GB, LPDDR5X 최대 9600MT/s |
 | CPU 전력 관련 공개 수치 | 인용한 발표 자료에 Intel PBP·MTP와 직접 대응하는 수치 미제시 | 기본 전력(PBP) 25W, 최대 터보 전력(MTP) 80W |
 
+![Apple Silicon M6](CPU%20images/503369685106718.jpeg)
+![Intel Core Ultra](CPU%20images/intel-core-ultra-x9-388h-teaser.jpg)
+
 사양 출처: [Apple M6 공식 발표](https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/), [Intel 388H 공식 사양](https://www.intel.com/content/www/us/en/products/sku/245526/intel-core-ultra-x9-processor-388h-18m-cache-up-to-5-10-ghz/specifications.html).
 
 메모리 표의 GB/s는 대역폭, MT/s는 전송률이므로 숫자 크기를 직접 비교하면 안 된다. Intel의 최대 메모리 용량도 실제 노트북마다 제공하는 용량과 다를 수 있다. 공정의 2nm와 18A 역시 제조사별 공정 이름이므로, 단순한 숫자 비율로 트랜지스터 크기나 효율 차이를 계산할 수 없다.
