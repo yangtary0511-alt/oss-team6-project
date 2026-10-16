@@ -1,3 +1,4 @@
+
 # oss-team9-project
 
 
@@ -7,7 +8,7 @@
 > 컴퓨터를 구성하는 핵심 부품의 원리와 역할을 알아보고,
 > 각 부품이 어떻게 협력하여 하나의 시스템을 이루는지 살펴봅니다.
 
-[Computer](1236.jpg)
+<img width="1000" height="1000" alt="1236" src="https://github.com/user-attachments/assets/c1f5aab9-3528-4916-bfc6-c39fb800d259" />
 
 ---
 
@@ -54,7 +55,8 @@ CPU의 성능은 클럭 속도뿐 아니라 코어와 스레드 수, 아키텍�
 
 **핵심 키워드:** 명령어 처리 · 연산 · 코어 · 스레드 · 캐시
 
-[CPU](1232.jpg)
+<img width="1024" height="572" alt="1232" src="https://github.com/user-attachments/assets/c1ab2254-dfdd-4951-bc1d-526be419001d" />
+
 
 👉 [CPU 자세히 알아보기](CPU.md)
 
@@ -73,7 +75,8 @@ RAM은 전원이 꺼지면 저장된 데이터가 사라지는 휘발성 메모�
 
 **핵심 키워드:** 임시 저장 · 휘발성 · DRAM · SRAM · DDR4 · DDR5
 
-[RAM](1234.jpg)
+<img width="1024" height="559" alt="1234" src="https://github.com/user-attachments/assets/883b0a47-a785-4fb7-8985-83f5cc9c710b" />
+
 
 👉 [RAM 자세히 알아보기](ram.md)
 
@@ -94,7 +97,8 @@ SSD는 NAND 플래시 메모리에 데이터를 저장합니다. 움직이는 �
 
 👉 [SSD · HDD 자세히 알아보기](ssd-hdd.md)
 
-[SSD-HDD](1235.jpg)
+<img width="1024" height="575" alt="1235" src="https://github.com/user-attachments/assets/b08fd215-40cd-4e53-801c-43aaadabf594" />
+
 
 ---
 
@@ -113,7 +117,8 @@ GPU가 처리하는 그래픽 데이터와 연산 중간 결과를 저장하는 
 
 👉 [GPU 자세히 알아보기](GPU.md)
 
-[GPU](1233.jpg)
+<img width="1024" height="559" alt="1233" src="https://github.com/user-attachments/assets/e5a96aa6-a6cb-4b4c-8e78-cc5e3065b15c" />
+
 
 ---
 
@@ -133,7 +138,8 @@ USB 및 네트워크 연결부 등이 주요 구성 요소입니다. 칩셋은 C
 
 **핵심 키워드:** 부품 연결 · CPU 소켓 · PCIe · M.2 · SATA · 호환성
 
-[메인보드](1231.jpg)
+<img width="1024" height="559" alt="1231" src="https://github.com/user-attachments/assets/9748067c-bdb4-4d84-9d59-4ca753d91ab1" />
+
 
 👉 [메인보드 자세히 알아보기](메인보드.md)
 
