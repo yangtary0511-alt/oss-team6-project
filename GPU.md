@@ -78,6 +78,9 @@ GPU가 연산을 하기 위해서는 피연산자 즉, 데이터를 저장할 �
 - GPU는 3차원 데이터를 2차원 화면으로 변환하는 **Rendering** 과정을 초당 수십~수백 번(**FPS**) 반복하여 움직이는 화면을 출력하며, 이 과정에서 필요한 대용량 데이터는 전용 메모리인 **VRAM**에 상주한다.
 
 **이미지 출처**
-- 그림 1: Fritzchens Fritz, Wikimedia Commons (CC0 1.0)
-- 그림 2: Benlisquare, Wikimedia Commons (CC BY-SA 4.0)
-- 그림 3: Offnfopt, Wikimedia Commons (CC BY-SA 4.0)
+
+- 그림 1: Fritzchens Fritz, [Wikimedia Commons 원본](https://commons.wikimedia.org/wiki/File:Nvidia@5nm@AdaLovelace@AD102@GeForce_RTX_4090@S_TW_2324A1_U2F028.MOW_AD102-301-A1_DSC05020-DSC05082.jpg), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
+
+- 그림 2: Benlisquare, [Wikimedia Commons 원본](https://commons.wikimedia.org/wiki/File:Asus_Strix_RTX_4090.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+- 그림 3: NVIDIA, NVIDIA CUDA Programming Guide version 3.0, [Wikimedia Commons 원본](https://commons.wikimedia.org/wiki/File:Cpu-gpu.svg), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
