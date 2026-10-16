@@ -15,7 +15,6 @@
 - [선택 가이드](#선택-가이드)
 - [용어 정리 (Glossary)](#용어-정리-glossary)
 - [요약](#요약)
-- [참고자료](#참고자료)
 
 ## 개요
 
@@ -111,12 +110,3 @@ RAM 구매 시 고려해야 할 핵심 항목은 다음과 같습니다.
 - 일반 PC에서 실제로 사용하는 RAM은 **DDR4/DDR5 SDRAM** 계열이며, 세대가 올라갈수록 동작 전압은 낮아지고 대역폭은 늘어나지만 서로 호환되지 않습니다.
 - 체감 속도는 클럭(전송률)만으로 정해지지 않고 **CAS Latency(CL)**까지 함께 고려해야 하며, 실제 지연시간은 `CL ÷ 실제 클럭(MHz) × 1000`(ns)으로 계산합니다.
 - 구매 시에는 **용량·DDR 세대·클럭/CL·듀얼채널 여부·발열(방열판)**을 함께 따져봐야 체감 성능과 호환성을 모두 만족시킬 수 있습니다.
-
-## 참고자료
-
-- JEDEC Solid State Technology Association — DDR4/DDR5 SDRAM 표준 규격 제정 기구: https://www.jedec.org/
-- Wikipedia, "Random-access memory": https://en.wikipedia.org/wiki/Random-access_memory
-- Wikipedia, "DDR5 SDRAM": https://en.wikipedia.org/wiki/DDR5_SDRAM
-- Wikipedia, "CAS latency": https://en.wikipedia.org/wiki/CAS_latency
-- Wikipedia, "ECC memory": https://en.wikipedia.org/wiki/ECC_memory
-- Wikipedia(한국어), "RAM": https://ko.wikipedia.org/wiki/RAM
