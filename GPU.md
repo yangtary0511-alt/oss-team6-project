@@ -11,9 +11,9 @@
 
 ## 1. GPU란 무엇인가?
 
-**GPU(Graphics Processing Unit)** 은 컴퓨터에서 이미지, 영상을 표현하는 데 필요한 연산을 수행하는 그래픽 처리 장치이다. 모니터에 출력되는 화면, 3D graphics, 특수 효과는 대규모 **Matrix·Vector Operation(행렬-벡터 연산)** 과 **Parallel Processing(병렬 연산)** 을 거쳐 생성되며, GPU는 이를 고속으로 처리하는 데 최적화된 하드웨어이다.
+**GPU(Graphics Processing Unit)** 은 컴퓨터에서 이미지, 영상을 표현하는 데 필요한 연산을 수행하는 그래픽 처리 장치이다. 모니터로 보게 되는 화면이나 입체적인 그래픽, 특수 효과들은 **벡터·행렬 연산과 병렬 연산**을 거쳐 만들어진다. GPU는 이러한 연산을 효율적으로 처리하는 하드웨어 장치이다.
 
-흔히 GPU라고 하면 그래픽카드와 같은 의미로 사용하는 경우가 많지만, 엄밀히 말하면 둘은 명확히 구분되는 개념이다.
+흔히 GPU라고 하면 그래픽카드와 같은 의미로 사용하는 경우가 많지만, 엄밀히 말하면 둘은 서로 다른 구분되는 개념이다.
 
 - **GPU:** 연산을 수행하는 반도체 칩
 - **그래픽카드:** GPU에 그래픽 메모리, 전원 공급 회로, 냉각장치 등을 결합한 하드웨어 장치
@@ -33,15 +33,7 @@
 
 CPU는 컴퓨터의 전반적인 동작을 제어하고 명령어를 처리하는 하드웨어이다.
 
-반면 GPU는 수천 개의 Core(연산 장치)를 활용해 대규모 데이터에 동일한 연산을 동시에 적용하는 Parallel Processing에 특화되어 있다. 단, 전체 Throughput(처리량)이 높다고 해서 모든 작업에서 CPU보다 빠른 것은 아니다. Sequential Processing(순차 작업)이나 복잡한 Branching(조건 분기)이 많은 작업에서는 GPU의 효율이 떨어진다.
-
-![CPU vs GPU Architecture](https://upload.wikimedia.org/wikipedia/commons/c/c6/Cpu-gpu.svg)
-
-*그림 3. CPU와 GPU의 내부 구조 비교 (초록색 ALU가 연산 장치)*
-
-그림에서도 볼 수 있듯, 연산 장치의 면적 비율이 GPU의 대부분을 차지함을 알 수 있다.
-
----
+반면 GPU는 **병렬 연산**에 최적화되어 있으며, GPU에서 연산을 처리하기 위해 다수의 연산 장치를 이용한다. 많은 데이터에 비슷한 연산을 적용하는 데 특화되어 있는 하드웨어이다. 단순히 처리량이 많다고 하여 GPU가 CPU보다 빠르지는 않으며, 순차적인 작업이나 조건에 따라 처리 과정이 달라지는 작업에서는 GPU를 활용하기 어렵다.
 
 | 구분 | CPU | GPU |
 |---|---|---|
@@ -50,50 +42,26 @@ CPU는 컴퓨터의 전반적인 동작을 제어하고 명령어를 처리하�
 | 활용 | OS, 응용 프로그램 실행 | 그래픽 렌더링, 인공지능 연산 |
 
 
-> CPU와 GPU는 각기 다른 영역에 특화되어 있어 상호 보완적으로 작동하는 하드웨어이다.
+> CPU와 GPU는 서로 다른 강점을 가진 서로 대체될 수 없는 하드웨어이다.
 
 ## 3. GPU가 화면을 만드는 과정
 
-3차원 공간의 데이터를 바탕으로 2차원 화면 이미지를 생성하는 과정을 **렌더링(Rendering)** 이라 한다. 3차원 물체는 Vertex(정점)와 Polygon(다각형) 같은 기하학적 정보로 표현된다. GPU는 이러한 정보에 물체의 위치와 관찰 방향을 반영하고 화면에 표시할 색상(RGB 등)을 계산한다.
+어떤 장면의 정보를 바탕으로 이미지를 형성하는 과정을 **렌더링(Rendering)** 이라 한다. 3차원의 공간에서 물체는 여러 기하학적인 정보로 표현될 수 있다. GPU는 이러한 정보에 물체의 위치와 관찰 방향을 반영하고 화면에 표시할 색상(RGB 등)을 계산한다.
 
 다음과 같이 순서를 간단하게 나타낼 수 있다.
 
-1. **위치 및 시점 변환 (Vertex Processing):** 3차원 공간에서 물체의 위치와 카메라 시점을 계산
-2. **화면 투영 (Rasterization):** 3차원 물체가 2차원 화면의 어느 Pixel에 위치하는지 변환
-3. **색상 계산 (Pixel Shading):** 표면 재질(Texture)과 조명(Lighting)을 반영해 최종 색상 결정
-4. **결과 수정 (Frame Buffering):** 계산된 결과를 결합해 하나의 완성된 이미지 생성
+1. **위치 계산:** 물체의 위치와 관찰 방향을 반영
+2. **화면 대응:** 물체가 화면의 어느 부분에 나타나는지 계산
+3. **색상 계산:** 표면 이미지(텍스처와 조명 등)을 반영
+4. **화면 구성:** 계산 결과를 바탕으로 하나의 이미지 생성
 
 여기에서 설명하는 하나의 이미지를 **프레임(Frame)** 이라 하며 시각적으로 움직이는 장면을 만들기 위해 새로운 이미지를 계속해서 만들어야 한다. 초당 프레임 수를 **FPS(Frames Per Second)** 라고 한다.
 
 ## 4. VRAM의 역할
 
-GPU가 연산을 하기 위해서는 피연산자 즉, 데이터를 저장할 메모리가 필요하다. 외장 그래픽카드에는 이러한 데이터를 저장하는 **VRAM** 이라는 전용 그래픽 메모리가 탑재된다. VRAM에는 일반적으로 다음 데이터가 저장된다.
-
-- 물체 표현의 질감을 표현하는 **Texture** 데이터
-- 물체의 형태와 공간의 좌표를 담고 있는 **Vertex** 데이터
-- 화면에 출력할 최종 **Frame Buffer** 및 연산 중간 결과 데이터
-
-### VRAM 사용량에 영향을 주는 요소
-
-| 요소 | VRAM 사용량이 증가하는 이유 |
-| 높은 해상도 | 화면에 출력할 픽셀 수가 많아짐 |
-| 고품질 텍스처 | 더 세밀한 질감 데이터를 저장함 |
-| 복잡한 장면 | 많은 물체의 그래픽 데이터를 저장함 |
-| --- | --- |
-
-
-> **참고:** VRAM 용량이 크다고 GPU의 연산 성능까지 높아지는 것은 아니다.
-
 ## 5. 정리
 
-- **GPU**는 대규모 **Vector·Matrix Operation**을 동시에 처리하는 **Parallel Processing** 특화 반도체 칩이며, 이를 구동하기 위해 **VRAM**, 전원부, 쿨러 등을 결합한 장치가 **그래픽카드**이다.
-- **CPU**는 복잡한 제어와 순차 작업(**Sequential Processing**)을 담당하고, **GPU**는 대규모 반복 연산을 분담하여 상호 보완적으로 동작한다.
-- GPU는 3차원 데이터를 2차원 화면으로 변환하는 **Rendering** 과정을 초당 수십~수백 번(**FPS**) 반복하여 움직이는 화면을 출력하며, 이 과정에서 필요한 대용량 데이터는 전용 메모리인 **VRAM**에 상주한다.
 
 **이미지 출처**
-
-- 그림 1: Fritzchens Fritz, [Wikimedia Commons 원본](https://commons.wikimedia.org/wiki/File:Nvidia@5nm@AdaLovelace@AD102@GeForce_RTX_4090@S_TW_2324A1_U2F028.MOW_AD102-301-A1_DSC05020-DSC05082.jpg), [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/)
-
-- 그림 2: Benlisquare, [Wikimedia Commons 원본](https://commons.wikimedia.org/wiki/File:Asus_Strix_RTX_4090.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-
-- 그림 3: NVIDIA, NVIDIA CUDA Programming Guide version 3.0, [Wikimedia Commons 원본](https://commons.wikimedia.org/wiki/File:Cpu-gpu.svg), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
+- 그림 1: Fritzchens Fritz, Wikimedia Commons (CC0 1.0)
+- 그림 2: Benlisquare, Wikimedia Commons (CC BY-SA 4.0)
